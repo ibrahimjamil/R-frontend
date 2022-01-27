@@ -1,0 +1,23 @@
+/**
+ * Handle the exp errors.
+ *
+ * @param {Function} tryFunc Function to handle.
+ * @param {string} [message] Optional forced error message.
+ */
+const handleError = (tryFunc, message = null) => {
+	let result = null;
+
+	try {
+		result = tryFunc();
+	} catch (e) {
+		if (e instanceof Error) {
+			// renderError(message || e.message);
+		} else {
+			// renderError("Something went wrong");
+		}
+	}
+
+	return result;
+};
+
+export default handleError;

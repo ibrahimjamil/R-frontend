@@ -1,0 +1,68 @@
+@import '../style.module.less';
+
+.coinBlock {
+	background: url('/images/pattern.svg') top left no-repeat;
+	background-size: cover;
+	background-color: @clr-dark-green;
+	margin-top: -0.5rem;
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+	font-family: 'DM Sans', sans-serif;
+	color: @white;
+	line-height: 1.2;
+	font-size: 1.25rem;
+	.coinImageLeft {
+		position: absolute;
+    	left: 0px;
+	}
+	.coinImageRight {
+		position: absolute;
+    	right: 0px;
+	}
+	.smallText {
+		font-size: 1.125rem;
+		font-weight: 400;
+		padding-bottom: 0.5rem;
+	}
+	h2 {
+		font-size: 3rem;
+		color: @white;
+		margin-bottom: 2.2rem;
+	}
+	.counterBlock {
+		display: flex;
+		gap: 3rem;
+		margin-top: 0.7rem;
+		margin-bottom: 1rem;
+		.greyBlock {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: 230px;
+			background: @white;
+			padding: 1.2rem 1.375rem;
+			color: @black;
+			font-size: 1rem;
+			border-radius: 10px;
+			.number {
+				font-size: 3rem;
+				line-height: 1;
+				color: #33A0A6;
+			}
+			&:not(:first-child) {
+				.number {
+					color: @clr-dark-green;
+				}
+			}
+		}
+	}
+	.dottedBorder {
+		margin-top: 2.5rem;
+		margin-bottom: 3.5rem;
+		padding: 1rem 1.5rem;
+		border: 1px dashed;
+		border-radius: 8px;
+		line-height: 1.5;
+	}
+}

@@ -1,0 +1,116 @@
+.wrapper {
+	height: 100vh;
+	width: 100%;
+	background-color: @clr-white;
+	display: flex;
+	background: #E5E5E5;
+	.title {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 36px;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 30px;
+		line-height: 36px;
+		color: #111827;
+	}
+	.loginContainer {
+		height: 400px;
+		padding: 32px 40px;
+		background-color: @clr-white;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+		.loginInputFields {
+			height: 42px;
+			border-radius: 6px;
+
+			&:hover {
+				border-color: @clr-dark-green !important;
+			}
+			&:focus {
+				border-color: @clr-dark-green !important;
+			}
+		}
+		.loginInputLabels {
+			font-size: 14px;
+			line-break: 20px;
+			font-weight: 500;
+			font-style: normal;
+			line-height: 20px;
+			margin-bottom: 24px;
+			label::before {
+				content: '';
+			}
+			label::after {
+				content: '';
+			}
+		}
+		.forgotPasswordLink {
+			color: @clr-dark-green;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			&:hover {
+				color: @clr-dark-green;
+			}
+		}
+		.rememberRoot {
+			margin-top: 15px;
+		}
+		.rememberMeCheckbox {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+			border-color: none;
+			span>span{
+				border: 1px solid #d9d9d9;
+			}
+			&:hover {
+				border-color: none;
+			}
+		}
+		.rememberMeCheckboxChecked {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+			border-color: none;
+			span>span {
+				background-color: @clr-dark-green;
+				border: 1px solid @clr-dark-green;
+			}
+		}
+		.signInButtonRoot {
+			margin-bottom: 18px !important;
+		}
+		.signInButton {
+			background-color: @clr-dark-green;
+			border-color: @clr-dark-green;
+			border-radius: 6px;
+			height: 42px;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			&:hover {
+				background-color: @clr-green-light;
+				border-color: @clr-green-light;
+			}
+		}
+		.createAccount {
+			color: #6B7280;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 0px;
+			.createAccountLink {
+				color: @clr-dark-green;
+				margin-bottom: 0px;
+				&:hover {
+					color: @clr-dark-green;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,157 @@
+.headingXs {
+	display: none;
+}
+
+.sectionOne, .sectionThree {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+
+.sectionFive, .sectionFour {
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+.sectionSix {
+	padding-top: 3rem;
+	line-height: 1.2;
+	.sectionSixImg {
+		margin-bottom: -3px;
+	}
+	p {
+		line-height: 1.8;
+	}
+	.sectionSixImgMobile {
+		display: none;
+	}
+}
+
+.sectionSeven {
+	background: url('/images/pattern.svg') no-repeat;
+	background-size: cover;
+	background-color: @clr-dark-green;
+	padding-top: 4rem;
+	h2 {
+		color: @clr-white;
+		line-height: 1.4;
+		margin-bottom: 3rem;
+	}
+	.downloadAppImg {
+		margin-bottom: -6px;
+	}
+	.downloadAppMobile {
+		display: none;
+	}
+}
+
+@media(max-width: 768px) {
+	.smNone{
+		display: none;
+	}
+
+	.sectionOne {
+		padding-bottom: 0;
+	}
+
+	.sectionFive, .sectionFour {
+		padding-bottom: 0;
+	}
+
+	.sectionThree, .sectionFive {
+		.sectionThreeImg, .sectionFiveImg {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.sectionSix {
+		h2 {
+			font-size: 2.5rem;
+		}
+		padding-bottom: 2rem;
+		.lineHeightSm {
+			line-height: 1.4;
+		}
+		.sectionSixImg {
+			display: none;
+		}
+		.sectionSixImgMobile {
+			display: block;
+		}
+	}
+
+	.sectionSeven {
+		padding-top: 3rem;
+		h2 {
+			line-height: 1.2;
+		}
+		.downloadApp {
+			display: none;
+		}
+		.downloadAppMobile {
+			display: block;
+			margin-right: -5rem;
+    	margin-bottom: -5rem;
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.xsNone {
+		display: none;
+	}
+
+	.headingXs {
+		display: block;
+		text-align: center;
+		padding-left: 12px;
+		padding-right: 12px;
+		margin-bottom: 2rem;
+	}
+
+	h2 {
+		line-height: 1.2;
+	}
+
+	.ptXs2 {
+		padding-top: 2rem;
+	}
+
+	.ptXs4 {
+		padding-top: 4rem;
+	}
+
+	.dSmBlock {
+		display: block;
+	}
+
+	.sectionOne {
+		.sectionOneText {
+			padding-top: 2rem;
+		}
+	}
+
+	.sectionFour, .sectionThree, .sectionFive {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	.sectionSix {
+		background-color: #f5f8fa;
+		h2 {
+			text-align: center;
+		}
+	}
+
+	.sectionSeven {
+		padding-bottom: 3rem;
+		h2 {
+			margin-bottom: 2rem;
+			font-size: 2.25rem;
+			text-align: center;
+		}
+		.downloadAppMobile {
+			margin-bottom: 0;
+			margin-right: 0;
+		}
+	}
+}

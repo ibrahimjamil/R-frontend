@@ -1,0 +1,83 @@
+@import '../style.module.less';
+
+.countDown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.launchText {
+	padding-bottom: 3rem;
+}
+.timer {
+	display: flex;
+	gap: 3rem;
+    z-index: 1;
+	.number {
+		font-size: 4.5rem;
+		font-weight: 600;
+	}
+	.text {
+		font-size: 1rem;
+		font-weight: 500;
+	}
+	hr {
+		margin: 0;
+		padding: 0;
+		min-height: 100px;
+		background: @white;
+		display: inline-block;
+	}
+	.timeBox {
+		min-width: 130px;
+	}
+}
+
+@media (max-width: 800px) {
+	.timer {
+		display: flex;
+		gap: 15px;
+		.timeBox {
+			min-width: 150px;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.timer {
+		display: flex;
+		gap: 5px;
+		.timeBox {
+			min-width: 90px;
+		}
+	}
+}
+@media (max-width: 400px) {
+	.timer {
+		.number {
+			font-size: 3.5rem;
+			font-weight: 600;
+		}
+		display: flex;
+		gap: 5px;
+		.timeBox {
+			min-width: 75px;
+		}
+	}
+}
+
+@media (max-width: 300px) {
+	.timer {
+		.number {
+			font-size: 2.5rem;
+			font-weight: 600;
+		}
+		display: flex;
+		gap: 0px;
+		.timeBox {
+			min-width: 70px;
+		}
+		hr {
+			min-height: 70px;
+		}
+	}
+}

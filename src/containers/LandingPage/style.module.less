@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.pageWrapper {
+	:global {
+		html {
+			font-size: 16px;
+			scroll-behavior: smooth;
+		}
+
+		html, body {
+			height: 100%;
+		}
+
+		body {
+			font-family: 'DM Sans', sans-serif;
+			line-height: 1.5;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		input, button, textarea, select {
+			font: inherit;
+		}
+
+		p, h1, h2, h3, h4, h5, h6, li {
+			font-family: 'DM Sans', sans-serif;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a,button {
+			transition: all 0.3s ease-in-out;
+			font-family: 'DM Sans', sans-serif;
+		}
+
+		button {
+			border: 0;
+			cursor: pointer;
+			&:focus {
+				outline: transparent;
+			}
+		}
+
+		.btn-primary, .btnPrimary {
+			padding: 1rem 1.5rem;
+			color: @clr-dark-green;
+			font-weight: bold;
+			line-height: 21px;
+			border-radius: 4px;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		h1 {
+			font-size: 3.75rem;
+			color: @clr-white;
+			line-height: 1.2;
+		}
+
+		h2 {
+			font-size: 2.625rem;
+		}
+
+		h3 {
+			font-size: 1.125rem;
+		}
+
+		.margin-right-1 {
+			margin-right: 1.6rem;
+		}
+
+		.d-block {
+			display: block;
+		}
+
+		.clr-dark-green {
+			color: @clr-dark-green;
+		}
+
+		.expertise {
+			display: grid;
+    	grid-template-columns: 1fr 1fr;
+			margin-top: 10px;
+		}
+
+		.renteez {
+			margin-top: 1rem;
+		}
+
+		.clr-black {
+			color: @clr-black !important;
+		}
+
+		.font-600 {
+			font-weight: 600 !important;
+		}
+
+		.expertise, .renteez {
+			li {
+				display: flex;
+				align-items: center;
+				margin-bottom: 10px;
+				&:before {
+					content: "";
+					display: inline-block;
+					height: 14px;
+					width: 14px;
+					background: url('/images/check.svg') no-repeat;
+					background-size: 14px;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.landlord, .tenant {
+			margin-top: -65px;
+			.btnPrimary {
+				background: @clr-dark-green;
+				color: @clr-white;
+				padding: 1.5rem 1.2rem;
+				border-radius: 4px;
+				line-height: 0 !important;
+				&:hover {
+					background: #328b91;
+				}
+			}
+
+			ul {
+				padding-left: 0;
+				li {
+					font-size: 1rem;
+				}
+			}
+
+			small {
+				color: @clr-dark-green;
+			}
+
+			p {
+				color: @clr-grey-medium;
+				font-size: 20px;
+				font-weight: 400;
+			}
+
+			small {
+				font-size: 12px;
+				font-weight: 600;
+				letter-spacing: 1px;
+			}
+		}
+		.landlord {
+			background: #ebf5f6;
+		}
+
+		.tenant {
+			background: #EDF0F3;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.pageWrapper {
+		:global {
+			.expertise {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	.pageWrapper {
+		:global {
+			.d-sm-none {
+				display: none !important;
+			}
+			.expertise {
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.pageWrapper {
+		:global {
+			.expertise {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.pageWrapper {
+		:global {
+			h2 {
+				font-size: 2rem;
+			}
+		}
+	}
+}

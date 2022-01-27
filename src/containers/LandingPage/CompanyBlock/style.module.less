@@ -1,0 +1,52 @@
+@import '../style.module.less';
+
+.btnGroup {
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	top: 35px;
+	margin-top: -28px;
+	z-index: 100;
+	button {
+		min-width: 180px;
+		background: @clr-dark-grey;
+		font-weight: 700;
+		font-size: 1rem;
+		padding: 1.4rem 0;
+		line-height: 0 !important;
+		&:hover, &:focus {
+			background: @clr-dark-grey;
+			box-shadow: none !important;
+			outline: transparent !important;
+		}
+		&:first-child {
+			border-radius: 25px 0 0 25px;
+		}
+		&:last-child {
+			border-radius: 0px 25px 25px 0px;
+		}
+	}
+	.divider {
+		background: @clr-dark-grey;
+		font-size: 20px;
+		font-weight: 200;
+		line-height: 2;
+		color: rgba(255, 255, 255, 0.4);
+	}
+	.active {
+		background-color: @clr-dark-green !important;
+		font-weight: 400;
+	}
+	.btnDim {
+		color: @clr-grey-light;
+		font-weight: 400;
+	}
+}
+
+@media(max-width: 320px) {
+	.btnGroup {
+		button {
+			min-width: 160px;
+		}
+	}
+}

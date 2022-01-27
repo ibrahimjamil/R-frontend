@@ -1,0 +1,39 @@
+
+.topBannerwrapper {
+		background: url('/images/pattern.svg') top left no-repeat,
+		url('/images/banner-bg.svg') 0 100% no-repeat;
+		background-size: cover;
+		background-color: #f2f3f5;
+		height: 1062px;
+	:global {
+		.banner-block {
+			p {
+				color: @clr-grey-light;
+			}
+		}
+	}
+}
+
+@media(max-width: 1440px) {
+	.topBannerwrapper {
+		height: 50.375rem;
+	}
+}
+
+@media(max-width: 1024px) {
+	.topBannerwrapper {
+		height: 35rem;
+	}
+}
+
+@media(max-width: 768px) {
+	.topBannerwrapper {
+		height: 100vh;
+	}
+}
+
+@media(max-width: 767px) {
+	.topBannerwrapper {
+		height: 49.375rem;
+	}
+}

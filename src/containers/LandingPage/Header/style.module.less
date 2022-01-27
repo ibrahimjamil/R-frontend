@@ -1,0 +1,69 @@
+
+.headerWrapper {
+	:global {
+		header {
+			padding: 3rem 3rem 0;
+			.btn-outline {
+				min-width: 100px;
+				min-height: 40px;
+				background-color: transparent;
+				font-weight: 700;
+				color: @clr-white;
+				border: 1px solid @clr-white;
+				border-radius: 4px;
+				&:hover,
+				&.active {
+					background: @clr-white;
+					color: @clr-dark-green;
+				}
+			}
+			nav {
+				display: flex;
+				align-items: center;
+				gap: 3rem;
+				li {
+					cursor: pointer;
+					color: @clr-white;
+				}
+				.nav-links {
+					display: flex;
+					li {
+						position: relative;
+						&:not(:last-child) {
+							margin-right: 2.5rem;
+						}
+						&:after {
+							content: '';
+							width: 0;
+							position: absolute;
+							transition: all 0.3s ease;
+							left: 0;
+							bottom: -5px;
+							height: 2px;
+							background: hsl(0, 0%, 100%);
+						}
+						&:hover {
+							&:after {
+								width: 100%;
+								left: 0;
+							}
+						}
+					}
+				}
+				.nav-actions {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.headerWrapper {
+		:global {
+			header {
+				padding: 1.25rem 1.25rem 0;
+			}
+		}
+	}
+}
